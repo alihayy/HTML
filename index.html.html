@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!--  Custom JavaScript -->
+<script src="/javascript.js"></script>
+
+
+  <style>
+    #h1color {
+      color: #C34142;
+    }
+
+    .btn-bounce {
+      animation: bounce 2s infinite;
+    }
+
+    .btn-google {
+      color: red;
+    }
+
+    .btn-apple {
+      color: black;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .custom-button {
+      color: black; 
+    }
+
+    .custom-button:hover {
+      color: white !important; 
+    }
+
+    .navbar-nav .nav-item .nav-link .custom-button:hover {
+      color: white !important; 
+    }
+    .inline-display {
+  display: flex;
+  align-items: center;
+}
+
+.inline-display .display1 {
+  margin: 0;
+  padding-right: 0.5rem; 
+}
+.display-1{
+  color: #C34142 ;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+.slide-up {
+            position: relative;
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                bottom: -100px;
+                opacity: 0;
+            }
+            to {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+        #about-1::after {
+    background: #C34142;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 20px ;
+    
+}
+#work::after {
+    background: #C34142;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 20px auto;
+    
+}
+
+  #container{
+    background-color: rgba(250, 229, 215, 0.548);
+  }
+  #Easy:hover {
+    content: '';
+    color: #C34142;
+  }
+  .related-image {
+    display: none;
+}
+.related-image img {
+    width: 100%;
+    height: auto;
+}
+#related-image1 {
+    display: block;
+}
+.clickable {
+    cursor: pointer;
+}
+
+    .navbar-nav .nav-item {
+  border: 2px solid rgba(0, 0, 0, 0.244);
+  border-radius: 30px; 
+  margin: 0 5px; 
+}
+
+.navbar-nav .nav-item a.nav-link {
+  display: block;
+  padding: 10px 15px; 
+  color: rgb(0, 0, 0); 
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: #C34142;
+}
+
+.navbar-nav .nav-item:hover a.nav-link {
+  color: white;
+}
+.related-img {
+    max-width: 50%; 
+    height: auto;
+}
+
+.swiper {
+      width:80%;
+      height:40;
+    }
+    .swiper-slide {
+      position: relative;
+      overflow: clip;
+      transition: transform 0.3s;
+    }
+    .swiper-slide img {
+      width:30%;
+      height:100%;
+      object-fit: cover;
+    }
+    .swiper-slide-prev .swiper-slide {
+      transform: translateX(-100%) rotateY(-25deg);
+    }
+    .swiper-slide-next .swiper-slide {
+      transform: translateX(100%) rotateY(25deg);
+    }
+    .swiper-slide-active .swiper-slide {
+      transform: translateX(0) rotateY(0);
+    }
+    .swiper-pagination {
+      bottom: 20px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      color: #fff;
+    }
+    .toggle-switch {
+        display: inline-block;
+        position: relative;
+        width: 200px; 
+        height: 50px; 
+    }
+
+  .checkbox {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #f0f0f0;
+        border: 2px solid gray;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .label-text {
+        position: absolute;
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .monthly {
+        left: 0;
+        color: black;
+    }
+
+    .yearly {
+        right: 0;
+        color: gray;
+    }
+
+   
+    .slider {
+        position: absolute;
+        width: 50%;
+        height: calc(100% - 4px);
+        background-color: rgb(231, 167, 167);
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        top: 2px;
+        left: 2px;
+    }
+
+  
+    .checkbox:checked + .toggle .slider {
+        left: calc(100% - 2px - 50%);
+        background-color:#f45757c0;
+    }
+
+    .checkbox:checked + .toggle .monthly {
+        color: gray;
+    }
+
+    .checkbox:checked + .toggle .yearly {
+        color: black;
+    }
+#check{
+  color: rgb(15, 179, 15);
+}
+
+.card:hover {
+    border-color: #C34142; 
+    transition: border-color 0.3s ease; 
+}
+
+.card {
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    border-radius: 25px;
+}
+.rounded-pill {
+    border-radius: var(--bs-border-radius-pill) !important;
+    width: 100%;
+}
+.btnr{
+  border: 5px solid #9a41c3e4; 
+  border-radius: 25px;
+color: #C34142;
+
+}
+.btnr:hover{
+  border-color: #f0a6a6; 
+  background-color: #C34142;
+  color: aliceblue;
+    transition: border-color 0.3s ease; 
+}
+.bb {
+  border: 1px solid  #f0a6a6;
+  border-radius: 50px;
+  padding:25px;
+background-color: #C34142;
+}
+#icon:hover{
+  border-color: #2f78e6; 
+transition: border-color 0.3s ease; 
+}
+.social-icon {
+            color: #C34142;
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: blue;
+        }
+.link a{
+  color: #C34142;
+  
+}
+  </style>
+</head>
+<body>
+  <div style="background-image: url('images/Group 18053.png'); background-size:700px; background-repeat: no-repeat; background-position: right;">
+    <div class="container-fluid ps-5">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light top">
+            <div class="container-fluid">
+              <a class="navbar-brand ps-5" href="#"><img src="images/Group 18060.png" alt="" class="img-fluid" style="max-width: 45%;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-5 pe-5 fw-bold" id="navbutton">
+                  <li class="nav-item">
+                    <a class="nav-link active text-nowrap" aria-current="page" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Screen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-nowrap" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <button class="btn btn-outline-danger text-white w-100 text-nowrap custom-button" type="submit">Book an Appointment</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+    
+        <div class="col-lg-6 col-md-12 py-5">
+          <h1 class="fs-1 fw-bold pt-5 mt-5" id="h1color">Your Hassle-Free</h1>
+          <h1 class="fw-bold">Saloon.Online Booking Solution</h1>
+          <p class="text-muted">We've designed the perfect solution to make your <br> hairdressing appointment a breeze.</p>
+          <div class="d-flex flex-column flex-md-row gap-2 bounce">
+            <button class="btn btn-outline-danger  w-75  text-nowrap btn-bounce btn-google " type="submit" id="GOOGLE">
+              <i class="bi bi-google-play"> Available on <br> GOOGLE PLAY</i>
+            </button> <br>
+
+            <button class="btn btn-outline-secondary w-75 text-nowrap btn-bounce btn-apple" type="submit" id="APPLE">
+              <i class="bi bi-apple"> Available on <br> APP STORE</i>
+            </button>
+          </div>
+          <p class="text-muted">* Available on iphone, ipad and all Android devices</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center slide-up" >
+          <img src="images/Group 18067.png" alt="" class="img-fluid w-50" data-mdb-animation-init data-mdb-toggle="animation" data-mdb-animation-start="onHover" data-mdb-animation="slide-in-left" data-mdb-animation-reset="true">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid" data-aos="zoom-in">
+<div class="row">
+  <div class="col-md-3">
+    <div class="counter-container" data-aos="fade-up" data-aos-duration="1000"  >
+  <div class="counter display-1" data-target="1289"></div>
+  <span>Users</span></div>
+</div>
+<div class="col-md-3">
+<div class="counter-container">
+  <div class="counter display-1" data-target="789"></div>
+  <span>Download</span>
+</div>
+</div>
+<div class="col-md-3">
+<div class="counter-container">
+  <div class="counter  display-1" data-target="1089"></div>
+  <span>Likes</span>
+</div>
+</div>
+<div class="col-md-3">
+  <div class="counter-container">
+    <div class="counter  display-1" data-target="489"></div>
+    <span> 5 Star Rating</span>
+  </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid pb-5 pt-5">
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pt-3  text-center py-5" data-aos="zoom-in">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="images/about-two.png" alt="" width="100%" class="img-fluid">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="images/about-one.png" alt="" width="100%" class="img-fluid pb-3">
+          <img src="images/about=4th.png" alt="" width="100%" class="img-fluid">
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1 id="about-1" data-aos="zoom-in" data-aos-duration="1000" class="aos-inti aos-animation">About Us</h1>
+  <p class="pt-3 fs-5">At Saloon.Online, we have developed a seamless and user-friendly platform that caters to both men and women, offering a convenient experience for booking Saloon appointments. Our innovative app allows users to effortlessly search for Saloons nearby or by name, providing them with a hassle-free booking process.</p>
+   <p class="pt-3 fs-5">
+    Customers can select their desired services, choose suitable timings, and make appointments with ease. Once the booking is confirmed, Saloon owners can efficiently manage and approve appointments through their admin portal. Our goal is to ensure that every customer can visit the Saloon at their scheduled time without any delays, enjoying a smooth and efficient Saloon experience. Experience the convenience of Saloon bookings with Saloon.Online.
+   </p>
+</div>
+  </div>
+</div>
+<div class="container-fluid" id="container">
+<div class="row py-5 aos-inti aos-animate" data-aos="fade-down" >
+  <div class="col-md-12 pt-5 pb-5">
+    <div class="section-top text-center aos-init aos-animate" data-aos="fade-up"><h1 class= fw-bold py-2" id="h1color">Awesome App Features</h1></div>
+  </div>
+  <div class="col-md-4 text-center" id="Easy">
+    <img src="images/online-appoiment.png" alt="" width="45%" class="ps-2"><br>
+    <span class="fw-bold ps-3 fs-5 ">Online Appointment Booking</span><br>
+    <p class="pt-3">  Schedule your salon visits with ease using our convenient online booking system.</p>
+    
+
+  </div>
+  <div class="col-md-4 text-center" id="Easy">
+    <img src="images/homesalon1.png" alt="" width="45%" class="ps-2"><br>
+<span class="fw-bold ps-3 fs-5">Home Services</span><br>
+<p class="pt-3">Enjoy saloon-quality services in the comfort of your own home with our home service options.</p>
+
+    
+  </div>
+  <div class="col-md-4 text-center" id="Easy">
+    <img src="images/management1.png" alt="" width="45%" class="ps-2"><br>
+    <span class="fw-bold ps-3 fs-5">Barber Shop Management</span><br>
+    <p class="pt-3">Empower barbers to efficiently manage their shops, services, and staff with our comprehensive management tools.</p>
+    
+
+    
+  </div>
+</div>
+</div>
+<div class="container-fluid py-5 ">
+  <div class="row ">
+    <div class="col-md-12 aos-inti aos-animate text-center" data-aos="fade-up"><h1 class=" fw-bold " id="work">
+      How it Works
+    </h1>
+  <p>Experience the ease of the Saloon.Online App, your trusted companion for seamless Saloon reservations <br>
+    Here is how it works</p></div>
+    <div class="col-md-6 text-center px-5 py-5 aos-inti aos-animate" data-aos="fade-in-right" style="align-content: center;">
+      <div class="related-image" id="related-image1">
+          <img src="images/Sign up.png" alt="Related image 1" class="img-fluid related-img">
+      </div>
+      <div class="related-image" id="related-image2">
+          <img src="images/Chose Saloon.png" alt="Related image 2" class="img-fluid related-img">
+      </div>
+      <div class="related-image" id="related-image3">
+          <img src="images/shop services.png" alt="Related image 3" class="img-fluid related-img">
+      </div>
+      <div class="related-image" id="related-image4">
+          <img src="images/Select date.jpg" alt="Related image 4" class="img-fluid related-img">
+      </div>
+      <div class="related-image" id="related-image5">
+          <img src="images/choose your specialist.jpg" alt="Related image 5" class="img-fluid related-img">
+      </div>
+      <div class="related-image" id="related-image6">
+          <img src="images/Select date time.png" alt="Related image 6" class="img-fluid related-img">
+      </div>
+  </div>
+  
+  <div class="col-md-6 px-5 py-5 aos-init aos-animate text-center" data-aos="fade-out-right" id="Easy">
+    <div class="row mb-3 pt-5">
+        <div class="col-2 ">
+            <svg width="50" height="50">
+                <image x="0" y="0" width="50" height="50" href="https://img.icons8.com/?size=100&id=k1xXzD3NEvLF&format=png&color=000000" class="clickable" data-related-image="related-image1"></image>
+            </svg>
+        </div>
+        <div class="col-10  d-flex align-items-center">
+            <p class=" mb-0">Sign Up</p>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2">
+            <svg width="50" height="50">
+                <image x="0" y="0" width="50" height="50" href="https://img.icons8.com/?size=100&id=k8awtRz8Z1Ab&format=png&color=000000" class="clickable" data-related-image="related-image2"></image>
+            </svg>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+            <p class=" mb-0">Choose Salon</p>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2">
+            <svg width="50" height="50">
+                <image x="0" y="0" width="50" height="50" href="https://img.icons8.com/?size=100&id=42235&format=png&color=000000" class="clickable" data-related-image="related-image3"></image>
+            </svg>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+            <p class=" mb-0">Select Services</p>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2">
+            <svg width="50" height="50">
+                <image x="0" y="0" width="50" height="50" href="https://img.icons8.com/?size=100&id=8136&format=png&color=000000" class="clickable" data-related-image="related-image4"></image>
+            </svg>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+            <p class=" mb-0">Choose Date</p>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2">
+            <svg width="50" height="50">
+                <image x="0" y="0" width="50" height="50" href="https://img.icons8.com/?size=100&id=SaTBTNJgjQHq&format=png&color=000000" class="clickable" data-related-image="related-image5"></image>
+            </svg>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+            <p class=" mb-0">Choose Your Specialist</p>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2">
+            <svg width="50" height="50">
+                <image x="0" y="0" width="50" height="50" href="https://img.icons8.com/?size=100&id=dWDv25JW0F3X&format=png&color=000000" class="clickable" data-related-image="related-image6"></image>
+            </svg>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+            <p class=" mb-0">Choose Date Time</p>
+        </div>
+    </div><br>
+    <div class="d-flex gap-2" data-aos="fade-down">
+      <button class="btn btn-outline-danger  w-75  text-nowrap btn-bounce btn-google " type="submit" id="GOOGLE">
+        <i class="bi bi-google-play"> Available on <br> GOOGLE PLAY</i>
+      </button> <br>
+
+      <button class="btn btn-outline-secondary w-75 text-nowrap btn-bounce btn-apple" type="submit" id="APPLE">
+        <i class="bi bi-apple"> Available on <br> APP STORE</i>
+      </button>
+    </div>
+</div>
+
+  
+  </div>
+</div>
+<div class="container-fluid px-3 py-3 py-md-5 px-md-5" style="background-color: antiquewhite;">
+  <div class="row">
+    <div class="col-12 text-center aos-init aos-animate" data-aos="fade-up">
+      <h1 class="fw-bold pt-5" id="work">Services We Provide</h1>
+    </div>
+    
+    <div class="col-md-4 mt-4" data-aos="fade-right">
+      <h1 class="fs-3 pb-3">Customer Services</h1>
+      <div class="row">
+        <div class="col-3 col-sm-2">
+          <img src="images/Appointment booking-1.png" alt="Appointment Booking" class="img-fluid pb-3 pt-3" width="50">
+        </div>
+        <div class="col-9 col-sm-10 pt-3 ps-3">
+          <h1 class="fs-5 pb-2">Appointment Booking</h1>
+          <p>Easily book appointments with your favorite barbers.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-sm-2 pt-3">
+          <img src="images/chat.png" alt="Chat" class="img-fluid pb-3 pt-3" width="50">
+        </div>
+        <div class="col-9 col-sm-10 pt-3 ps-3">
+          <h1 class="fs-5 pb-2">Chat Support</h1>
+          <p>Instant chat support available for your queries.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-sm-2 pt-3">
+          <img src="images/reminders.png" alt="Reminders" class="img-fluid pb-3 pt-3" width="50">
+        </div>
+        <div class="col-9 col-sm-10 pt-3 ps-3">
+          <h1 class="fs-5 pb-2">Appointment Reminders</h1>
+          <p>Receive reminders for your upcoming appointments.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mt-4" data-aos="fade-right">
+      <img src="images/m 1.png" alt="" class="img-fluid">
+    </div>
+    
+    <div class="col-md-4 mt-4" data-aos="fade-right">
+      <h1 class="fs-3 pb-3">Barber Services</h1>
+      <div class="row">
+        <div class="col-3 col-sm-2">
+          <img src="images/registered.png" alt="Appointment Booking" class="img-fluid pb-3 pt-3" width="50">
+        </div>
+        <div class="col-9 col-sm-10 pt-3 ps-3">
+          <h1 class="fs-5 pb-2">Register Your Saloon</h1>
+          <p>Create a profile and showcase your saloon to potential customers.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-sm-2 pb-3">
+          <img src="images/management.png" alt="Chat" class="img-fluid pb-3 pt-3" width="50">
+        </div>
+        <div class="col-9 col-sm-10 pt-3 ps-3">
+          <h1 class="fs-5 pb-2">Manage Staff and Services</h1>
+          <p>Keep your team and service offerings up to date</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-sm-2 pb-2">
+          <img src="images/appointment-control.png" alt="Reminders" class="img-fluid pb-3 pt-3" width="50">
+        </div>
+        <div class="col-9 col-sm-10 pt-2 ps-3">
+          <h1 class="fs-5 pb-2">Appointment Control</h1>
+          <p>Accept & declined appointments with ease.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid pb-5"data-aos="fade-right" >
+  <div class="row">
+    <div class="col-md-12 d-flex flex-column justify-content-center align-items-center" style="background-image: url(images/Addressing-Performance-Challenges-in-On-Demand-Mobile-Apps-1-2048x1170.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 600px;">
+      <h1 class="text-center display-1 fw-bold fs-1 text-white mb-4">Watch a Quick Tutorial</h1>
+      <button class="btn btn-outline-light rounded-pill d-flex align-items-center justify-content-center" style="font-size: 1.5rem; width: 50px; height: 50px;">
+        <i class="bi bi-youtube"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid  pb-5">
+  <div class="row">
+    <div class="col-md-12 text-center" data-aos="fade-down">
+      <h1 id="work" >Simple & Beautiful interfaces</h1><br>
+      <p>Navigate effortlessly through our app with a clean and visually appealing
+        interface that makes booking your Saloon appointments a breeze</p>
+        <div class="col-md-12" data-aos="fade-up">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/map.png" alt="Slide 1" >
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Ladies Home.png" alt="Slide 2"  >
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Sign up (1).png" alt="Slide 3" >
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Profile.png" alt="Slide 4">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Rating.png" alt="Slide 3">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Ladies book appointment (1).png" alt="Slide 3">
+              </div>
+             
+              <div class="swiper-slide">
+                <img src="images/My Booking.png" alt="Slide 3">
+              </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="container-fluid">
+<div class="row" >
+  <div class="col-md-6 px-5 py-5" data-aos="fade-in-up"  >
+    <h2>
+      Designed & Developed <br>
+on Latest Tech
+    </h2>
+    <p class="pb-5">
+      Our Website & App is skillfully crafted using WordPress for versatile content management, .Net for robust backend functionality, .Net MAUI Hybrid for cross-platform app development, and enhanced with HTML, TILWIND CSS, and JS for seamless user experience and interactivity.
+    </p>
+    <a href="" class="text-danger">Discover></a>
+
+  </div>
+  <div class="col-md-6 px-5 py-5" data-aos="fade-in-up">
+   <img src="images/used-lang (1).png" alt="" width="100%">
+
+  </div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12" data-aos="fade-right">
+      <h1 class="fw-bold text-center" id="work">FAQ'S</h1>
+    </div>
+   <div class="col-md-12" data-aos="fade-right">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is Salon.Online?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Salon.Online</strong> is a platform designed to make booking and managing salon appointments easier. This is the first item's accordion body, which is shown by default.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How do I book an Appointment using Salon.Online?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>To book an appointment</strong> using Salon.Online, simply navigate to the booking section, select your preferred salon and time, and confirm your booking. This is the second item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Is Salon.Online Free to use?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Yes, Salon.Online</strong> is free to use for customers looking to book appointments. Salons may have their own pricing for services. This is the third item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Can I cancel or reschedule my appointment?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Yes, you can</strong> cancel or reschedule your appointment through the Salon.Online platform. Please check the salon's policies for more details. This is the fourth item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Can I see reviews?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Yes, you can</strong> see reviews for each salon on the Salon.Online platform. Reviews can help you choose the best salon for your needs. This is the fifth item's accordion body.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+</div>
+
+  </div>
+
+</div>
+<div class="container-fluid " data-aos="fade-down">
+  <div class="row text-center">
+    <div class="col-md-12" >
+      <h1 id="work" >
+        Get In Reasonable Pricing
+      </h1>
+     <p class="pt-3 pb-5"> Experience quality services at budget-friendly rates with our <br>
+     transparent and reasonable pricing structure.</p>
+
+     <div class="toggle-switch">
+      <input type="checkbox" id="switch" class="checkbox" />
+      <label for="switch" class="toggle">
+          <span class="slider"></span>
+          <span class="label-text monthly">Monthly</span>
+          <span class="label-text yearly">Yearly</span>
+      </label>
+  </div>
+
+    <div class="row py-5 px-5"> 
+      
+      <div class="col-md-6 ">
+      <div class="card" style="width: auto;"  >
+        <div class="card-body">
+          <h5 class="card-title">Basic Package </h5>
+          <h6 class="card-subtitle mb-2 fw-bold pt-3"> $300</h6>
+          <p class="card-text"> <i class="bi bi-check fw-bold fs-4" id="check"></i>Top Recommendations: Yes <br>
+            <i class="bi bi-check fw-bold fs-4" id="check"></i> Per Day Limit: Limited <br>
+            <i class="bi bi-check fw-bold fs-4" id="check"></i>Service and Staff Registration: Limited <br>
+           No License <br>
+           Phone & Mail Support.</p>
+           <br>
+           <button type="button" class="btn btn-outline-danger rounded-pill">Get Started</button>
+         
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6 ">
+      <div class="card" style="width: auto;" >
+        <div class="card-body">
+          <h5 class="card-title">Premier Package </h5>
+          <h6 class="card-subtitle mb-2 fw-bold pt-3"> $200</h6>
+          <p class="card-text"> <i class="bi bi-check fw-bold fs-4" id="check"></i>Top Recommendations: Yes <br>
+            <i class="bi bi-check fw-bold fs-4" id="check"></i> Per Day Limit: Limited <br>
+            <i class="bi bi-check fw-bold fs-4" id="check"></i>Service and Staff Registration: Limited <br>
+           No License <br>
+           Phone & Mail Support.</p>
+           <br>
+           <button type="button" class="btn btn-outline-danger rounded-pill">Get Started</button>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row text-center px-5 py-5">
+    <div class="col-md-12" data-aos="fade-down">
+      <h1 id="work">Customer Feedback</h1>
+      <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-bs-ride="carousel" data-aos="fade-up">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src="images/Feedback-img.png" alt="Atif's avatar" style="width: 150px;" />
+                <h5 class="mb-3">Atif</h5>
+                <p>License is Ready</p>
+              </div>
+              <div class="col-md-8 pt-md-0 pt-4">
+                <p class="text-muted">
+                  <i class="bi bi-chat-left-quote pe-2"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                  nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                  fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                  doloremque.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="John Doe's avatar" style="width: 150px;" />
+                <h5 class="mb-3">John Doe</h5>
+                <p>Web Developer</p>
+              </div>
+              <div class="col-md-8 pt-md-0 pt-4">
+                <p class="text-muted">
+                  <i class="bi bi-chat-left-quote pe-2"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                  nesciunt sint eligendi reprehenderit reiciendis.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="Anna Deynah's avatar" style="width: 150px;" />
+                <h5 class="mb-3">Anna Deynah</h5>
+                <p>UX Designer</p>
+              </div>
+              <div class="col-md-8 pt-md-0 pt-4">
+                <p class="text-muted">
+                  <i class="bi bi-chat-left-quote pe-2"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                  nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                  fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                  doloremque.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-4">
+                <img class="rounded-circle shadow-1-strong mb-4" src="images/feedback-2.jpg" alt="Dino's avatar" style="width: 150px;" />
+                <h5 class="mb-3">Dino</h5>
+                <p>Artist</p>
+              </div>
+              <div class="col-md-8 pt-md-0 pt-4">
+                <p class="text-muted">
+                  <i class="bi bi-chat-left-quote pe-2"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                  nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                  fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                  doloremque.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star-fill"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-body" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-body" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row text-center px-5 py-5">
+    <div class="col-md-12" data-aos="fade-down">
+      <h1 id="work">Our Latest News</h1>
+    </div>
+
+    <div class="col-md-4 d-flex flex-column align-items-start" data-aos="fade-up">
+      <img src="images/news-1 (1).jpg" alt="" height="200px" width="100%" class="img-fluid pb-3">
+      <p class="text-start">Date: June 21, 2024</p>
+      <p class="text-start fw-bold">Exciting Summer Specials!</p>
+      <p class="text-start flex-grow-1">Get ready for summer with our exclusive Saloon specials! From June 21st to August 31st, enjoy 20% off on all hair coloring services and free hair treatments with every haircut. Book your appointment now and shine this summer!</p>
+      <a href="" class="text-start" style="color: #C34142;">Read More</a>
+    </div>
+
+    <div class="col-md-4 d-flex flex-column align-items-start" data-aos="fade-down">
+      <img src="images/news-2.jpeg" alt="" width="100%" height="200px" class="img-fluid pb-3">
+      <p class="text-start">Date: June 1, 2024</p>
+      <p class="text-start fw-bold">Saloon Renovation Complete!</p>
+      <p class="text-start flex-grow-1">Get ready for summer with our exclusive Saloon specials! From June 21st to August 31st, enjoy 20% off on all hair coloring services and free hair treatments with every haircut. Book your appointment now and shine this summer!</p>
+      <a href="" class="text-start" style="color: #C34142;">Read More</a>
+    </div>
+
+    <div class="col-md-4 d-flex flex-column align-items-start" data-aos="fade-up">
+      <img src="images/news-1.jpg" alt="" width="100%" height="200px" class="img-fluid pb-3">
+      <p class="text-start">Date: June 18, 2024</p>
+      <p class="text-start fw-bold">Saloon Renovation Complete!</p>
+      <p class="text-start flex-grow-1">Get ready for summer with our exclusive Saloon specials! From June 21st to August 31st, enjoy 20% off on all hair coloring services and free hair treatments with every haircut. Book your appointment now and shine this summer!</p>
+      <a href="" class="text-start" style="color: #C34142;">Read More</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-light" >
+  <div class="row  px-5 py-5">
+    <div class="col-md-12" data-aos="fade-right">
+<h1>Subscribe to Our Newsletter</h1>
+<p class="pb-3">A Private Limited is the most popular type of partnership Malta. The limited liabillity <br>
+  is, in fact, the only type of company allowed by Companies.</p>
+ </div>
+<div class="bb row ">
+  <div class="col-md-8" data-aos="zoom-in">
+  <input type="text" id="username" name="username" placeholder="Example@gmail.com" class="rounded-pill form-control">
+</div>
+<div class="col-md-4">
+  <button type="button" class="btnr d-flex align-items-center jusify-content-center">Subscribe Now</button>
+</div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid bg-light" >
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-md-3 mb-3" >
+          <img src="images/Group 18060.png" alt="" class="float-start" width="150px"> <br> <br>
+          <p class=" text-start pt-3">Be the first to find out about exclusive deals, the latest. Lookbooks trends. we're on a mission to build a better future where technology.</p>
+          <i class="bi bi-facebook pe-3 social-icon" ></i>
+          <i class="bi bi-instagram pe-3 social-icon" ></i>
+          <i class="bi bi-twitter pe-3 social-icon" ></i>
+          <i class="bi bi-tiktok social-icon" ></i>
+        </div>
+  
+        <div class="col-md-3 mb-3 px-5" >
+          <h5 class="text-nowrap">Contact Information</h5>
+         <p class="text-nowrap"> Phone: +92 51 844 – 6629</p>
+         <p class="text-nowrap">Email: Info@solochoicez.com</p>
+         <p class="text-nowrap">Address: Office# 09, VIP Plaza, <br> I-8  Markaz, Islamabad, Pakistan</p>  
+        </div>
+  
+        <div class="col-md-3 mb-3 px-5" >
+          <h5>Quick Links</h5>
+          <p class="link"><a href="">News Letter</a><br>
+          <a href="">Privacy Policy </a><br>
+          <a href="">Support</a><br>
+          <a href="">Terms & Conditions</a><br>
+          <a href="">Support</a></p>
+
+        </div>
+  
+        <div class="col-md-3  mb-3">
+          <form>
+            <h5>Download Now</h5>
+            <button class="btn btn-outline-danger  w-75  text-nowrap btn-google mb-3" type="submit" id="GOOGLE">
+              <i class="bi bi-google-play"> Available on <br> GOOGLE PLAY</i>
+            </button> <br>
+
+            <button class="btn btn-outline-secondary w-75 text-nowrap  btn-apple" type="submit" id="APPLE">
+              <i class="bi bi-apple"> Available on <br> APP STORE</i>
+            </button>
+            </div>
+          </form>
+    <div class="d-flex flex-column flex-lg-row justify-content-between py-4 my-4 border-top">
+        <p>2018, applio Theme by Themexriver Team <a href="" class="text-black">| Privacy Policy | Site Map</a></p>
+        <ul class="list-unstyled d-flex">
+          All Right Reserved
+        </ul>
+      </div>
+    </footer>
+    
+  </div>
+
+<script>
+  $(document).ready(function() {
+    $('.clickable').on('click', function() {
+      var relatedImageId = $(this).data('related-image');
+      $('.related-image').hide();
+      $('#' + relatedImageId).show();
+    });
+  });
+
+  const counters = document.querySelectorAll(".counter");
+  counters.forEach((counter) => {
+    counter.innerText = "0";
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
+      const increment = target / 200;
+      if (count < target) {
+        counter.innerText = `${Math.ceil(count + increment)}`;
+        setTimeout(updateCounter, 1);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCounter();
+  });
+
+  const clickableImages = document.querySelectorAll('.clickable');
+  clickableImages.forEach(image => {
+    image.addEventListener('click', () => {
+      const relatedImageID = image.getAttribute('data-related-image');
+      document.querySelectorAll('.related-image').forEach(img => img.style.display = 'none');
+      document.getElementById(relatedImageID).style.display = 'block';
+    });
+  });
+
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
+
+  AOS.init({
+    duration: 1200,
+  });
+
+</script>
+
+</body>
+</html>
